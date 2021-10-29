@@ -16,7 +16,7 @@ The models consist of users, merchants and transactions.
         
 #### Merchant Model:
 
-        type User struct {
+        type Merchant struct {
 	        Id       int    `json:"id"`
 	        Name     string `json:"name"`
 	        Balance  int    `json:"balance"`
