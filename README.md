@@ -141,7 +141,7 @@ id int <br>
 <br>
 
 ## Transactions
-### Get merchants
+### Get transactions
 [GET] /transactions <br>
 #### Parameters: none <br>
 #### Response: <br>
