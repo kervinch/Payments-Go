@@ -1,0 +1,14 @@
+{{define "register"}}
+{{template "header" .}}
+<body>
+    <h1>Welcome to Payments in Go</h1>
+
+    <h4>Register</h4>
+    <form action="/register" id="register">
+        <input type="text" placeholder="Username" name="username">
+        <input type="password" placeholder=Password name="password">
+        <button type="submit" id="registerSubmit">Register</button>
+    </form>
+</body>
+</html>
+{{end}}

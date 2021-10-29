@@ -1,0 +1,22 @@
+{{define "payment"}}
+{{template "header" .}}
+<body>
+    <h1>Welcome to Payments in Go</h1>
+
+    <h4>Payment</h4>
+
+    <p>Hi {{.Username}}!, start making payments now!</p>
+
+    <form method="POST" action="/pay" id="pay">
+        <select name="merchant">
+            <option value="1">Merchant A</option>
+            <option value="2">Merchant B</option>
+            <option value="3">Merchant C</option>
+        </select>
+        <input type="number" placeholder=Amount name="amount">
+        <button type="submit" id="paySubmit">Pay</button>
+    </form>
+
+</body>
+</html>
+{{end}}

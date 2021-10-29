@@ -1,0 +1,13 @@
+{{define "login"}}
+{{template "header"}}
+<body>
+    <h1>Welcome to Payments in Go</h1>
+    <h4>Login</h4>
+    <form action="/login" id="login">
+        <input type="text" placeholder="Username" name="username">
+        <input type="password" placeholder=Password name="password">
+        <button type="submit" id="loginSubmit">Login</button>
+    </form>
+</body>
+</html>
+{{end}}
