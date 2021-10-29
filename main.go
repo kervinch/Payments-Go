@@ -162,6 +162,12 @@ func pay(w http.ResponseWriter, r *http.Request) {
 
 	// Check if user already logged in
 	username, _ := ExtractTokenUsername(r)
+
+	if username == "" { // User already logged in
+		w.Write([]byte("Please login first."))
+		return
+	}
+
 	var mid int
 	var amt int
 	var uid int
@@ -219,7 +225,7 @@ func logout(w http.ResponseWriter, r *http.Request) {
 		MaxAge: -1}
 	http.SetCookie(w, &c)
 
-	w.Write([]byte("Ccookie deleted. Logged out!\n"))
+	w.Write([]byte("Cookie deleted. Logged out!\n"))
 }
 
 // Display the payment template
